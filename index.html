@@ -291,24 +291,38 @@
             <h2>Contact Us</h2>
         </div>
         <div class="contact-form">
-            <form>
+            <!--
+                Form posts to Formspree. Replace YOUR_FORM_ID with your Formspree form ID
+                (example: https://formspree.io/f/abcdxyzw). This uses AJAX so the page
+                won't reload on submit and shows a friendly status message.
+            -->
+            <form id="contact-form" action="https://formspree.io/f/mojnvqyw" method="POST">
+                <!-- Honeypot to reduce spam -->
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone">
+                    <input type="tel" id="phone" name="phone">
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" required></textarea>
+                    <textarea id="message" name="message" required></textarea>
                 </div>
+
+                <!-- Optional: set the email subject that arrives in your inbox -->
+                <input type="hidden" name="_subject" value="New contact from la-signed.com">
+
                 <button type="submit" class="btn">Submit</button>
+
+                <div id="form-status" aria-live="polite" style="margin-top:1rem;color:#0056b3;"></div>
             </form>
         </div>
     </section>
@@ -327,14 +341,56 @@
             </div>
             <div class="footer-section">
                 <h3>Business Hours</h3>
-                <p>Monday-Friday: 9am - 6pm</p>
-                <p>Saturday: 10am - 4pm</p>
-                <p>Sunday: 10am - 4pm</p>
+                <p>Monday-Friday: 9am - 8pm</p>
+                <p>Saturday: 10am - 5pm</p>
+                <p>Sunday: 10am - 5pm</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 LA-Signed.com. All rights reserved.</p>
+            <p>&copy; 2026 LA-Signed.com. All rights reserved.</p>
         </div>
     </footer>
-</body>
-</html>
+
+    <!-- Contact form AJAX handler -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('contact-form');
+        if (!form) return;
+        const status = document.getElementById('form-status');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            if (status) status.textContent = 'Sending...';
+
+            // Basic client-side honeypot check
+            const gotcha = form.querySelector('input[name="_gotcha"]').value;
+            if (gotcha) {
+                if (status) status.textContent = 'Spam detected.';
+                return;
+            }
+
+            const data = new FormData(form);
+
+            try {
+                const res = await fetch(form.action, {
+                    method: form.method || 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (res.ok) {
+                    if (status) status.textContent = 'Thanks — your message was sent!';
+                    form.reset();
+                } else {
+                    const err = await res.json().catch(() => null);
+                    if (status) status.textContent = (err && err.error) ? err.error : 'Submission failed. Please try again later.';
+                }
+            } catch (err) {
+                if (status) status.textContent = 'Network error. Please try again later.';
+            }
+        });
+    });
+    </script>
+
+    </body>
+    </html>
