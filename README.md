@@ -12,7 +12,7 @@ Next steps you should do in Wix (DNS)
   - 185.199.109.153
   - 185.199.110.153
   - 185.199.111.153
-- Add a CNAME for `www` pointing to `haftevaniarin.github.io`.
+- Add a CNAME for `www` pointing to `aftevaniarinh.github.io`.
 - Ensure DNS records are DNS-only (disable any Wix proxy/forwarding).
 
 Verification (run locally in terminal)
