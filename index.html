@@ -17,6 +17,19 @@
             color: #333;
             line-height: 1.6;
             background-color: #f9f9f9;
+    
+    <!-- Certifications / Logos -->
+    <section id="certifications" class="certifications">
+        <div class="section-title">
+            <h2>Certifications & Associations</h2>
+            <p style="max-width:700px;margin:0.5rem auto 0;color:#555;">We proudly partner with and are certified by the following organizations.</p>
+        </div>
+        <div class="cert-logos" aria-hidden="false">
+            <div class="cert-logo"><img src="/assets/certs/cert1.svg" alt="Certification 1"></div>
+            <div class="cert-logo"><img src="/assets/certs/cert2.svg" alt="Certification 2"></div>
+            <div class="cert-logo"><img src="/assets/certs/cert3.svg" alt="Certification 3"></div>
+        </div>
+    </section>
         }
 
         /* Header Styles */
@@ -168,6 +181,37 @@
             margin-bottom: 1.5rem;
         }
 
+        /* Certifications / Logos */
+        .certifications {
+            padding: 3rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cert-logos {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .cert-logo {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.06);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 160px;
+            height: 80px;
+        }
+
+        .cert-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
         /* Contact Section */
         .contact {
             padding: 5rem 5%;
@@ -273,6 +317,7 @@
         </div>
     </section>
 
+
     <!-- About Section -->
     <section id="about" class="about">
         <div class="about-content">
@@ -341,9 +386,9 @@
             </div>
             <div class="footer-section">
                 <h3>Business Hours</h3>
-                <p>Monday-Friday: 9am - 8pm</p>
-                <p>Saturday: 10am - 5pm</p>
-                <p>Sunday: 10am - 5pm</p>
+                <p>Monday-Friday: 8am - 8pm</p>
+                <p>Saturday: 9am - 5pm</p>
+                <p>Sunday: 9am - 5pm</p>
             </div>
         </div>
         <div class="footer-bottom">
