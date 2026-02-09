@@ -43,6 +43,14 @@
             font-weight: 700;
             color: #0056b3;
             text-decoration: none;
+            white-space: nowrap; /* prevent wrapping on small screens */
+        }
+
+        /* Header responsiveness: prevent logo wrapping and reduce spacing on small screens */
+        @media (max-width: 600px) {
+            .logo { font-size: 1.25rem; }
+            .navbar { padding: 0.75rem 4%; }
+            .nav-links li { margin-left: 1rem; }
         }
 
         .nav-links {
