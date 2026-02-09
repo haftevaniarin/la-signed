@@ -187,17 +187,30 @@
 
         .cert-logo {
             background: white;
-            padding: 1rem;
+            padding: 1.25rem;
             border-radius: 8px;
-            box-shadow: 0 5px 12px rgba(0,0,0,0.06);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 160px;
-            height: 80px;
+            width: 320px; /* increased from 160px */
+            height: 160px; /* increased from 80px */
+            transition: transform 160ms ease, box-shadow 160ms ease;
         }
 
-        .cert-logo img { max-width: 200%; max-height: 100%; object-fit: contain; }
+        .cert-logo:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 10px 24px rgba(0,0,0,0.12); }
+
+        .cert-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+        /* Responsive: scale down logos on small screens */
+        @media (max-width: 900px) {
+            .cert-logo { width: 260px; height: 130px; }
+        }
+
+        @media (max-width: 600px) {
+            .cert-logos { gap: 1rem; }
+            .cert-logo { width: 200px; height: 100px; padding: 0.75rem; }
+        }
 
         /* Contact Section */
         .contact {
