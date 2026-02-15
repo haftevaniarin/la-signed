@@ -282,6 +282,15 @@
             .cert-logo.cert-text .cert-text-label { font-size: 1.1rem; }
         }
 
+        /* Ensure phone links in footer appear white on small screens (some mobile UAs auto-link numbers) */
+        @media (max-width: 600px) {
+            .footer-section a[href^="tel"] {
+                color: #fff !important;
+                text-decoration: none !important;
+            }
+            .footer-section a[href^="tel"]:visited { color: #fff !important; }
+        }
+
         /* Contact Section */
         .contact {
             padding: 5rem 5%;
@@ -477,7 +486,7 @@
                 <p>Email: arinyedgarian.signing@gmail.com</p>
                 <p>
                     <a href="https://www.instagram.com/la.signed/" target="_blank" rel="noopener noreferrer">
-                        <img class="social-badge" src="assets/certs/instagram-logo-png-transparent-background.png" alt="Instagram">
+                        <img class="social-badge" src="assets/certs/122-1221050_instagram-white-logo-vector-png.png" alt="Instagram">
                     </a>
                 </p>
             </div>
