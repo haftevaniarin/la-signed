@@ -196,6 +196,16 @@
             display: block;
         }
 
+        /* Snapdocs badge sizing and spacing in About section */
+        .about-text .snapdocs-badge {
+            width: 200px;
+            height: auto;
+            display: inline-block;
+            margin-top: 0.75rem; /* vertical space between preceding text and badge */
+            margin-left: 0.5rem; /* small gap if placed inline */
+            vertical-align: middle;
+        }
+
         .about-text h2 {
             font-size: 2.5rem;
             color: #000000; /* changed from blue to black */
@@ -236,14 +246,24 @@
 
         .cert-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
 
+    /* Text-only certification card styling (for E&O label) */
+    .cert-logo.cert-text { background: white; padding: 1.25rem; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; width: 320px; height: 160px; }
+    .cert-logo.cert-text .cert-text-label { font-size: 1.6rem; font-weight: 700; color: #333; line-height: 1; text-align: center; }
+
         /* Responsive: scale down logos on small screens */
         @media (max-width: 900px) {
             .cert-logo { width: 260px; height: 130px; }
+            /* Scale down text-only E&O card on medium screens */
+            .cert-logo.cert-text { width: 260px; height: 130px; }
+            .cert-logo.cert-text .cert-text-label { font-size: 1.4rem; }
         }
 
         @media (max-width: 600px) {
             .cert-logos { gap: 1rem; }
             .cert-logo { width: 200px; height: 100px; padding: 0.75rem; }
+            /* Make E&O text label smaller on narrow screens */
+            .cert-logo.cert-text { width: 200px; height: 100px; padding: 0.75rem; }
+            .cert-logo.cert-text .cert-text-label { font-size: 1.1rem; }
         }
 
         /* Contact Section */
@@ -358,10 +378,16 @@
             <div class="about-image"><img src="assets/images/Home-Welcome-1.jpg" alt="LA-Signed team"></div>
             <div class="about-text">
                 <h2>About LA-Signed.com</h2>
-                <p>I’m Arin Yedgarian, commissioned Notary Public and Certified Loan Signing Agent with over 5 years of experience serving Los Angeles County.</p>
-                <p> I specialize in notarizing real estate, legal, and financial documents with accuracy, efficiency, and a commitment to providing a seamless signing experience for clients.</p>
-                <p>With a passion for helping clients achieve their goals, I am committed to providing exceptional service and ensuring that every loan signing is handled with the utmost professionalism and care.</p>
-                <p>Fluent in English, Armenian and Farsi.</p>
+                <p>I’m Arin Yedgarian, a commissioned Notary Public and Certified Loan Signing Agent with over five years of experience serving clients throughout Los Angeles County.</p>
+                <p> I specialize in real estate, legal, and financial document notarization, delivering each signing with precision, efficiency, and uncompromising attention to detail.</p>
+                <p>My goal is to provide a seamless, reliable, and stress-free signing experience while upholding the highest standards of professionalism, accuracy, and confidentiality.</p>
+                <p>Fluent in English, Armenian, and Farsi, I am proud to serve a diverse clientele with clear communication and personalized service.</p>
+                <p>
+                    <a href="https://notary.snapdocs.com/notary-public/california/glendale/arin-yedgarian"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="snapdocs-badge" src="assets/certs/snapdocs logo.png" alt="Snapdocs profile badge">
+                    </a>
+                </p>
             </div>
         </div>
     </section>
@@ -376,6 +402,7 @@
             <div class="cert-logo"><img src="assets/certs/generated-image-2026-01-31_09-43-16.png" alt="Certification 1"></div>
             <div class="cert-logo"><img src="assets/certs/Logo1200trueratio-1506110294301.png" alt="Certification 2"></div>
             <div class="cert-logo"><img src="assets/certs/nsa_member_badge.png" alt="Certification 3"></div>
+            <div class="cert-logo cert-text"><span class="cert-text-label">Bonded and E&amp;O Insured 100K</span></div>
         </div>
     </section>
 
@@ -432,12 +459,7 @@
                 <h3>Contact Information</h3>
                 <p>Phone: (747) 273-6542</p>
                 <p>Email: arinyedgarian.signing@gmail.com</p>
-                <p>
-                    <a href="https://notary.snapdocs.com/notary-public/california/glendale/arin-yedgarian"
-                        target="_blank" rel="noopener noreferrer">
-                    <img src="assets/certs/snapdocs logo.png" alt="Snapdocs profile badge">
-                    </a>
-                </p>
+                
             </div>
             <div class="footer-section">
                 <h3>Business Hours</h3>
