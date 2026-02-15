@@ -55,11 +55,18 @@
             white-space: nowrap; /* prevent wrapping on small screens */
         }
 
-        /* Header responsiveness: prevent logo wrapping and reduce spacing on small screens */
+        /* Header responsiveness: prevent logo wrapping and reduce spacing on small screens
+           On mobile show only the Contact link (last nav item) to keep header clean */
         @media (max-width: 600px) {
             .logo { font-size: 1.25rem; }
             .navbar { padding: 0.75rem 4%; }
-            .nav-links li { margin-left: 1rem; }
+            /* hide all nav items by default on narrow screens */
+            .nav-links { display: flex; gap: 0.5rem; }
+            .nav-links li { margin-left: 0; display: none; }
+            /* show only the last nav item (Contact) */
+            .nav-links li:last-child { display: inline-block; }
+            /* ensure link styling doesn't collapse the header */
+            .nav-links a { padding: 0.25rem 0.5rem; }
         }
 
         .nav-links {
@@ -124,7 +131,7 @@
         }
 
         .btn:hover {
-            background-color: #003d7a;
+            background-color: #B9B2A8;
         }
 
         /* Services Section */
@@ -203,6 +210,15 @@
             display: inline-block;
             margin-top: 0.75rem; /* vertical space between preceding text and badge */
             margin-left: 0.5rem; /* small gap if placed inline */
+            vertical-align: middle;
+        }
+
+        /* Footer social badge sizing */
+        .footer-section .social-badge {
+            width: 28px;
+            height: auto;
+            display: inline-block;
+            margin-left: 0.5rem;
             vertical-align: middle;
         }
 
@@ -459,7 +475,11 @@
                 <h3>Contact Information</h3>
                 <p>Phone: (747) 273-6542</p>
                 <p>Email: arinyedgarian.signing@gmail.com</p>
-                
+                <p>
+                    <a href="https://www.instagram.com/la.signed/" target="_blank" rel="noopener noreferrer">
+                        <img class="social-badge" src="assets/certs/instagram-logo-png-transparent-background.png" alt="Instagram">
+                    </a>
+                </p>
             </div>
             <div class="footer-section">
                 <h3>Business Hours</h3>
