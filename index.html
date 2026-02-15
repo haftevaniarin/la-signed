@@ -91,7 +91,9 @@
 
         /* Hero Section */
         .hero {
-            font-family: 'Aboreto', cursive;
+            /* force Aboreto for hero content; use !important to override any UA/autolink or global rules */
+            font-family: 'Aboreto', cursive !important;
+            font-weight: 700 !important;
             /* use local hero background image with a dark overlay for contrast */
             background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('assets/images/jason-dent-w3eFhqXjkZE-unsplash.jpg');
             background-size: cover;
@@ -101,6 +103,9 @@
             text-align: center;
             position: relative;
         }
+
+        /* Ensure headings and paragraphs inside hero use Aboreto explicitly */
+        .hero h1, .hero p { font-family: 'Aboreto', cursive !important; font-weight: 700 !important; }
 
         /* Make hero shorter on narrow screens so subsequent sections are visible sooner */
         @media (max-width: 600px) {
@@ -403,10 +408,10 @@
             <div class="about-image"><img src="assets/images/Home-Welcome-1.jpg" alt="LA-Signed team"></div>
             <div class="about-text">
                 <h2>About LA-Signed.com</h2>
-                <p>I’m Arin Yedgarian, a commissioned Notary Public and Certified Loan Signing Agent with over five years of experience serving clients throughout Los Angeles County.</p>
-                <p> I specialize in real estate, legal, and financial document notarization, delivering each signing with precision, efficiency, and uncompromising attention to detail.</p>
-                <p>My goal is to provide a seamless, reliable, and stress-free signing experience while upholding the highest standards of professionalism, accuracy, and confidentiality.</p>
-                <p>Fluent in English, Armenian, and Farsi, I am proud to serve a diverse clientele with clear communication and personalized service.</p>
+                <p>LA signed is a premier Notary Public and Certified Loan Signing Agent service proudly serving clients throughout Los Angeles County. </p>
+                <p>Founded and led by Arin Yedgarian, who brings over five years of experience, LA signed specializes in real estate, legal, and financial document notarization with exceptional precision and discretion.</p>
+                <p>Every signing is conducted with meticulous attention to detail, efficiency, and professionalism. LA signed is committed to delivering a seamless, white-glove experience that prioritizes accuracy, confidentiality, and client convenience.</p>
+                <p>Fluent in English, Armenian, and Farsi, LA Signed  provides refined, personalized service to a diverse clientele, ensuring clarity, comfort, and confidence at every appointment.</p>
                 <p>
                     <a href="https://notary.snapdocs.com/notary-public/california/glendale/arin-yedgarian"
                         target="_blank" rel="noopener noreferrer">
