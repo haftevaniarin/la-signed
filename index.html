@@ -1,571 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LA-Signed.com | Professional Loan Signing Services</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/certs/favicon-32.png">
-    <link rel="shortcut icon" href="assets/certs/favicon-32.png">
-    <!-- Google Font: Aboreto (used for hero section) -->
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
-    <!-- Google Font: Archivo Narrow (site body) -->
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            /* Use Archivo Narrow (Google Font) for site body; fallback to Futura/Arial */
-            font-family: 'Archivo Narrow', 'Futura', 'Trebuchet MS', Arial, sans-serif;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Notary &amp; Certified Loan Signing Agent in Los Angeles County | LA Signed</title>
+  <meta name="description" content="LA Signed provides premium mobile notary and certified loan signing services across Los Angeles County, including Glendale, Burbank, Pasadena, Beverly Hills, Santa Monica, and surrounding cities.">
+  <meta name="keywords" content="mobile notary los angeles county, certified loan signing agent glendale, notary public burbank, pasadena mobile notary, refinance signing, hospital notary">
+  <meta property="og:title" content="LA Signed | Mobile Notary &amp; Certified Loan Signing Agent">
+  <meta property="og:description" content="Same-day mobile notary and loan signing appointments available across Los Angeles County.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/Home-Welcome-1.jpg">
+  <meta property="og:url" content="https://la-signed.com/">
+  <link rel="canonical" href="https://la-signed.com/">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/certs/favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "LA Signed",
+    "image": "https://la-signed.com/assets/images/Home-Welcome-1.jpg",
+    "url": "https://la-signed.com/",
+    "telephone": "+1-747-273-6542",
+    "areaServed": [
+      "Glendale",
+      "Burbank",
+      "Pasadena",
+      "Los Angeles",
+      "Beverly Hills",
+      "Sherman Oaks",
+      "Studio City",
+      "Van Nuys",
+      "Santa Monica",
+      "North Hollywood"
+    ],
+    "description": "Mobile Notary Public and Certified Loan Signing Agent serving Los Angeles County with same-day appointments.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Glendale",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "21:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/la.signed/",
+      "https://notary.snapdocs.com/notary-public/california/glendale/arin-yedgarian"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What areas do you serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "LA Signed serves clients throughout Los Angeles County, including Glendale, Burbank, Pasadena, Los Angeles, Beverly Hills, Sherman Oaks, Studio City, Van Nuys, Santa Monica, and North Hollywood."
         }
-
-        body {
-            color: #333;
-            line-height: 1.6;
-            background-color: #B9B2A8; /* updated per request (not committed) */
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer same-day appointments?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Same-day and emergency mobile notary and loan signing appointments are available based on schedule and location."
         }
-
-        /* Prevent fixed header from covering anchored sections */
-        :root { --header-offset: 80px; }
-        html { scroll-padding-top: var(--header-offset); }
-
-        /* Header Styles */
-        header {
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
+      },
+      {
+        "@type": "Question",
+        "name": "Do you travel to hospitals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Mobile notary visits are available for hospitals and assisted-living facilities when legally permitted."
         }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #000000; /* changed from #0056b3 to black (working tree only) */
-            text-decoration: none;
-            white-space: nowrap; /* prevent wrapping on small screens */
-        }
-
-        /* Header responsiveness: prevent logo wrapping and reduce spacing on small screens
-           On mobile show only the Contact link (last nav item) to keep header clean */
-        @media (max-width: 600px) {
-            .logo { font-size: 1.25rem; }
-            .navbar { padding: 0.75rem 4%; }
-            /* hide all nav items by default on narrow screens */
-            .nav-links { display: flex; gap: 0.5rem; }
-            .nav-links li { margin-left: 0; display: none; }
-            /* show only the last nav item (Contact) */
-            .nav-links li:last-child { display: inline-block; }
-            /* ensure link styling doesn't collapse the header */
-            .nav-links a { padding: 0.25rem 0.5rem; }
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-links li {
-            margin-left: 2rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #000000; /* changed hover color from blue to black */
-        }
-
-        /* Hero Section */
-        .hero {
-            /* force Aboreto for hero content; use !important to override any UA/autolink or global rules */
-            font-family: 'Aboreto', cursive !important;
-            font-weight: 700 !important;
-            /* use local hero background image with a dark overlay for contrast */
-            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('assets/images/jason-dent-w3eFhqXjkZE-unsplash.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 10rem 5% 5rem;
-            text-align: center;
-            position: relative;
-        }
-
-        /* Ensure headings and paragraphs inside hero use Aboreto explicitly */
-        .hero h1, .hero p { font-family: 'Aboreto', cursive !important; font-weight: 700 !important; }
-
-        /* Make hero shorter on narrow screens so subsequent sections are visible sooner */
-        @media (max-width: 600px) {
-            .hero { padding: 6rem 5% 4rem; }
-            :root { --header-offset: 64px; }
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: white;
-            color: black;
-            padding: 0.8rem 2rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background-color 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #B9B2A8;
-        }
-
-        /* Services Section */
-        .services {
-            padding: 5rem 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: #000000; /* changed from blue to black */
-        }
-
-        .service-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-            transition: transform 0.3s;
-            /* explicit font sizing for service card content */
-            font-size: 18px;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .service-card h3 {
-            color: #000000; /* changed from blue to black */
-            margin-bottom: 1rem;
-            /* explicit heading size for consistency */
-            font-size: 1.25rem;
-            font-weight: 700;
-        }
-
-        /* About Section */
-        .about {
-            background-color: #A79A90;
-            padding: 5rem 5%;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .about-image {
-            background-color: #ccc;
-            height: 400px;
-            border-radius: 10px;
-            overflow: hidden;
-            display: block;
-        }
-
-        .about-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* preserve aspect ratio and cover the box */
-            display: block;
-        }
-
-        /* Snapdocs badge sizing and spacing in About section */
-        .about-text .snapdocs-badge {
-            width: 200px;
-            height: auto;
-            display: inline-block;
-            margin-top: 0.75rem; /* vertical space between preceding text and badge */
-            margin-left: 0.5rem; /* small gap if placed inline */
-            vertical-align: middle;
-        }
-
-        /* Footer social badge sizing */
-        .footer-section .social-badge {
-            width: 28px;
-            height: auto;
-            display: inline-block;
-            margin-left: 0.5rem;
-            vertical-align: middle;
-        }
-
-        .about-text h2 {
-            font-size: 2.5rem;
-            color: #000000; /* changed from blue to black */
-            margin-bottom: 1.5rem;
-        }
-
-        /* About section typography */
-        .about-text {
-            /* use the site font (Archivo Narrow) but allow explicit sizing for readability */
-            font-family: 'Archivo Narrow', 'Futura', 'Trebuchet MS', Arial, sans-serif;
-            font-size: 18px; /* 16px */
-            line-height: 1.75;
-            color: #222;
-        }
-
-        .about-text p {
-            margin-bottom: 1rem;
-        }
-
-        /* Certifications / Logos */
-        .certifications {
-            padding: 3rem 5%;
-            max-width: 2500px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .cert-logos {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
-        }
-
-        .cert-logo {
-            background: white;
-            padding: 1.25rem;
-            border-radius: 8px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 320px; /* increased from 160px */
-            height: 160px; /* increased from 80px */
-            transition: transform 160ms ease, box-shadow 160ms ease;
-        }
-
-        .cert-logo:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 10px 24px rgba(0,0,0,0.12); }
-
-        .cert-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
-
-    /* Text-only certification card styling (for E&O label) */
-    .cert-logo.cert-text { background: white; padding: 1.25rem; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; width: 320px; height: 160px; }
-    .cert-logo.cert-text .cert-text-label { font-size: 1.6rem; font-weight: 700; color: #333; line-height: 1; text-align: center; }
-
-        /* Responsive: scale down logos on small screens */
-        @media (max-width: 900px) {
-            .cert-logo { width: 260px; height: 130px; }
-            /* Scale down text-only E&O card on medium screens */
-            .cert-logo.cert-text { width: 260px; height: 130px; }
-            .cert-logo.cert-text .cert-text-label { font-size: 1.4rem; }
-        }
-
-        @media (max-width: 600px) {
-            .cert-logos { gap: 1rem; }
-            .cert-logo { width: 200px; height: 100px; padding: 0.75rem; }
-            /* Make E&O text label smaller on narrow screens */
-            .cert-logo.cert-text { width: 200px; height: 100px; padding: 0.75rem; }
-            .cert-logo.cert-text .cert-text-label { font-size: 1.1rem; }
-        }
-
-        /* Ensure phone links in footer appear white on small screens (some mobile UAs auto-link numbers) */
-        @media (max-width: 600px) {
-            .footer-section a[href^="tel"] {
-                color: #fff !important;
-                text-decoration: none !important;
-            }
-            .footer-section a[href^="tel"]:visited { color: #fff !important; }
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 5rem 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .contact-form {
-            background-color: #A79A90;
-            padding: 3rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .form-group textarea {
-            height: 150px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 3rem 5%;
-            text-align: center;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .footer-section h3 {
-            margin-bottom: 1.5rem;
-            font-size: 1.2rem;
-        }
-
-        .footer-bottom {
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-    </style>
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <a href="#" class="logo">LA-Signed.com</a>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="top-bar">
+    <div class="container">
+      <p>Certified Loan Signing Agent • Bonded &amp; E&amp;O Insured • Available 7 Days a Week</p>
+      <p><a href="tel:+17472736542">Call (747) 273-6542</a> • <a href="sms:+17472736542">Text Now</a></p>
+    </div>
+  </div>
 
-    <!-- Hero Section -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">LA <span>Signed</span></a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#areas">Areas Served</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
     <section class="hero">
-        <h1>Professional Loan Signing Services</h1>
-        <p>Expert notary public services for your loan documents in Los Angeles, California</p>
-        <a href="#contact" class="btn">Schedule Appointment</a>
+      <div class="container hero-grid">
+        <div class="reveal">
+          <p class="eyebrow">Premium Mobile Notary Service</p>
+          <h1>Mobile Notary &amp; Certified Loan Signing Agent in Los Angeles County</h1>
+          <p>Same-Day Appointments Available • Professional • Reliable • Mobile</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="tel:+17472736542">Call Now</a>
+            <a class="btn btn-primary" href="#contact">Schedule Appointment</a>
+            <a class="btn btn-outline" href="sms:+17472736542">Text Now</a>
+          </div>
+          <div class="quick-stats">
+            <div class="quick-stat"><strong>5+ Years</strong><span>Signing Experience</span></div>
+            <div class="quick-stat"><strong>Same Day</strong><span>Emergency Availability</span></div>
+            <div class="quick-stat"><strong>7 Days</strong><span>Evenings &amp; Weekends</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal" aria-label="Trust badges">
+          <div class="badges">
+            <div class="badge"><span class="badge-icon">✓</span> Certified Loan Signing Agent</div>
+            <div class="badge"><span class="badge-icon">✓</span> Bonded &amp; Insured</div>
+            <div class="badge"><span class="badge-icon">✓</span> Background Screened</div>
+            <div class="badge"><span class="badge-icon">✓</span> Mobile Service Across LA County</div>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="section-title">
-            <h2>Our Services</h2>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Why Professionals Choose LA Signed</p>
+          <h2>Trusted by Escrow Teams, Brokers, and Local Clients</h2>
         </div>
-        <div class="service-cards">
-            <div class="service-card">
-                <h3>Loan Signing Services</h3>
-                <p>Professional handling of all your loan documents with attention to detail and compliance with California notary standards.</p>
-            </div>
-            <div class="service-card">
-                <h3>Mobile Notary Services</h3>
-                <p>Convenient on-site loan signing assistance available throughout Los Angeles County.</p>
-            </div>
-            <div class="service-card">
-                <h3>Document Preparation</h3>
-                <p>Help with preparing and notarizing various loan documents to ensure accuracy and compliance.</p>
-            </div>
+        <div class="grid why-grid">
+          <article class="card reveal">
+            <div class="icon-wrap">📄</div>
+            <h3>Certified Loan Signing Agent</h3>
+            <p>Experienced with lender, escrow, title, and compliance-sensitive signing packages.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-wrap">🏆</div>
+            <h3>5+ Years Experience</h3>
+            <p>Proven execution for purchase, refinance, seller, and HELOC closings.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-wrap">⚡</div>
+            <h3>Same-Day Appointments</h3>
+            <p>Rapid response for urgent signings, funding deadlines, and last-minute scheduling.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-wrap">🚗</div>
+            <h3>Mobile Concierge Service</h3>
+            <p>Traveling to homes, offices, hospitals, and approved facilities throughout LA County.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-wrap">🗣</div>
+            <h3>Trilingual Communication</h3>
+            <p>Fluent service in English, Armenian, and Farsi for clear and confident signings.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-wrap">🔒</div>
+            <h3>Confidential &amp; Professional</h3>
+            <p>Every appointment is handled with privacy, punctuality, and high detail accuracy.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-wrap">🛡</div>
+            <h3>Bonded &amp; E&amp;O Insured</h3>
+            <p>Fully insured mobile notary support for peace of mind and risk-managed service.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-wrap">🕘</div>
+            <h3>Evenings &amp; Weekends</h3>
+            <p>Flexible scheduling designed for clients, borrowers, and real estate timelines.</p>
+          </article>
         </div>
+      </div>
     </section>
 
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-content">
-            <div class="about-image"><img src="assets/images/Home-Welcome-1.jpg" alt="LA-Signed team"></div>
-            <div class="about-text">
-                <h2>About LA-Signed.com</h2>
-                <p>LA signed is a premier Notary Public and Certified Loan Signing Agent service proudly serving clients throughout Los Angeles County. </p>
-                <p>Founded and led by Arin Yedgarian, who brings over five years of experience, LA signed specializes in real estate, legal, and financial document notarization with exceptional precision and discretion.</p>
-                <p>Every signing is conducted with meticulous attention to detail, efficiency, and professionalism. LA signed is committed to delivering a seamless, white-glove experience that prioritizes accuracy, confidentiality, and client convenience.</p>
-                <p>Fluent in English, Armenian, and Farsi, LA Signed  provides refined, personalized service to a diverse clientele, ensuring clarity, comfort, and confidence at every appointment.</p>
-                <p>
-                    <a href="https://notary.snapdocs.com/notary-public/california/glendale/arin-yedgarian"
-                        target="_blank" rel="noopener noreferrer">
-                        <img class="snapdocs-badge" src="assets/certs/snapdocs logo.png" alt="Snapdocs profile badge">
-                    </a>
-                </p>
-            </div>
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Core Services</p>
+          <h2>Loan Signing and Mobile Notary Services</h2>
         </div>
+        <div class="grid services-grid">
+          <article class="card service-card reveal"><div class="icon-wrap">🖋</div><h3>Loan Signing Services</h3><p>Compliant signing support for lenders, escrow officers, title partners, and brokers.</p><a href="#contact" class="btn btn-primary">Request Service</a></article>
+          <article class="card service-card reveal"><div class="icon-wrap">🏠</div><h3>Refinance Signings</h3><p>Structured refinance appointments with efficient document flow and signer guidance.</p><a href="#contact" class="btn btn-primary">Book Refinance</a></article>
+          <article class="card service-card reveal"><div class="icon-wrap">🤝</div><h3>Buyer &amp; Seller Packages</h3><p>Accurate signing execution for purchase and sale transactions across LA County.</p><a href="#contact" class="btn btn-primary">Schedule Closing</a></article>
+          <article class="card service-card reveal"><div class="icon-wrap">💳</div><h3>HELOC Signings</h3><p>Convenient home equity line signing services with evening and weekend options.</p><a href="#contact" class="btn btn-primary">Book HELOC</a></article>
+          <article class="card service-card reveal"><div class="icon-wrap">📁</div><h3>Trust Documents</h3><p>Professional notarization for trust, estate planning, and sensitive legal paperwork.</p><a href="#contact" class="btn btn-primary">Notarize Trust</a></article>
+          <article class="card service-card reveal"><div class="icon-wrap">⚖</div><h3>Power of Attorney</h3><p>Reliable notarization for POA documents with identity verification and discretion.</p><a href="#contact" class="btn btn-primary">Get Started</a></article>
+          <article class="card service-card reveal"><div class="icon-wrap">📍</div><h3>Mobile Notary Services</h3><p>Traveling notary appointments at your home, workplace, or preferred public location.</p><a href="#contact" class="btn btn-primary">Request Mobile Notary</a></article>
+          <article class="card service-card reveal"><div class="icon-wrap">🏥</div><h3>Hospital Notary</h3><p>Compassionate and urgent notary visits for patients and families when needed.</p><a href="#contact" class="btn btn-primary">Hospital Visit</a></article>
+        </div>
+      </div>
     </section>
 
-       <!-- Certifications / Logos -->
-    <section id="certifications" class="certifications">
-        <div class="section-title">
-            <h2>Certifications</h2>
-            <p style="max-width:700px;margin:0.5rem auto 0;color:#555;">We proudly partner with and are certified by the following organizations.</p>
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          <img src="assets/images/Home-Welcome-1.jpg" alt="Professional mobile notary from LA Signed">
         </div>
-        <div class="cert-logos" aria-hidden="false">
-            <div class="cert-logo"><img src="assets/certs/generated-image-2026-01-31_09-43-16.png" alt="Certification 1"></div>
-            <div class="cert-logo"><img src="assets/certs/Logo1200trueratio-1506110294301.png" alt="Certification 2"></div>
-            <div class="cert-logo"><img src="assets/certs/nsa_member_badge.png" alt="Certification 3"></div>
-            <div class="cert-logo cert-text"><span class="cert-text-label">Bonded and E&amp;O Insured 100K</span></div>
+        <article class="card reveal">
+          <p class="section-kicker">About the Notary</p>
+          <h2>Premium Service, Personal Accountability</h2>
+          <p>LA Signed is led by Arin Yedgarian, a Mobile Notary Public and Certified Loan Signing Agent serving Los Angeles County. Every appointment is managed with white-glove care, clear communication, and strict document handling standards.</p>
+          <p>From escrow and title workflows to personal legal notarizations, clients trust LA Signed for accuracy, confidentiality, and calm execution under time-sensitive conditions.</p>
+          <div class="credentials">
+            <span class="credential-item">Certified Loan Signing Agent</span>
+            <span class="credential-item">Background Screened</span>
+            <span class="credential-item">Bonded &amp; E&amp;O Insured</span>
+            <span class="credential-item">Available 7 Days</span>
+            <span class="credential-item">English • Armenian • Farsi</span>
+          </div>
+          <p style="margin-top:1rem;"><a class="btn btn-primary" href="https://notary.snapdocs.com/notary-public/california/glendale/arin-yedgarian" target="_blank" rel="noopener">View Snapdocs Profile</a></p>
+        </article>
+      </div>
+
+      <div class="container reveal" style="margin-top: 1.2rem;">
+        <h3>Credentials &amp; Certifications</h3>
+        <div class="partner-logos">
+          <div class="partner-logo"><img src="assets/certs/generated-image-2026-01-31_09-43-16.png" alt="Loan signing certification badge"></div>
+          <div class="partner-logo"><img src="assets/certs/Logo1200trueratio-1506110294301.png" alt="Professional notary credential"></div>
+          <div class="partner-logo"><img src="assets/certs/nsa_member_badge.png" alt="National Signing Agent membership badge"></div>
+          <div class="partner-logo"><img src="assets/certs/snapdocs logo.png" alt="Snapdocs trusted notary badge"></div>
         </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="section-title">
-            <h2>Contact Us</h2>
+    <section id="areas" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Local Service Areas</p>
+          <h2>Mobile Notary Services Across Los Angeles County</h2>
+          <p>Dedicated local pages for fast booking and location-specific loan signing service details.</p>
         </div>
-        <div class="contact-form">
-            <!--
-                Form posts to Formspree. Replace YOUR_FORM_ID with your Formspree form ID
-                (example: https://formspree.io/f/abcdxyzw). This uses AJAX so the page
-                won't reload on submit and shows a friendly status message.
-            -->
-            <form id="contact-form" action="https://formspree.io/f/mojnvqyw" method="POST">
-                <!-- Honeypot to reduce spam -->
-                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-
-                <!-- Optional: set the email subject that arrives in your inbox -->
-                <input type="hidden" name="_subject" value="New contact from la-signed.com">
-
-                <button type="submit" class="btn">Submit</button>
-
-                <div id="form-status" aria-live="polite" style="margin-top:1rem;color:#0056b3;"></div>
-            </form>
+        <div class="location-grid reveal">
+          <a class="location-pill" href="/glendale-mobile-notary/">Glendale</a>
+          <a class="location-pill" href="/burbank-loan-signing-agent/">Burbank</a>
+          <a class="location-pill" href="/pasadena-mobile-notary/">Pasadena</a>
+          <a class="location-pill" href="/los-angeles-mobile-notary/">Los Angeles</a>
+          <a class="location-pill" href="/beverly-hills-mobile-notary/">Beverly Hills</a>
+          <a class="location-pill" href="/sherman-oaks-mobile-notary/">Sherman Oaks</a>
+          <a class="location-pill" href="/studio-city-mobile-notary/">Studio City</a>
+          <a class="location-pill" href="/van-nuys-mobile-notary/">Van Nuys</a>
+          <a class="location-pill" href="/santa-monica-mobile-notary/">Santa Monica</a>
+          <a class="location-pill" href="/north-hollywood-mobile-notary/">North Hollywood</a>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>LA-Signed.com</h3>
-                <p>Professional loan signing services in Los Angeles</p>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Information</h3>
-                <p>Phone: (747) 273-6542</p>
-                <p>Email: arinyedgarian.signing@gmail.com</p>
-                <p>
-                    <a href="https://www.instagram.com/la.signed/" target="_blank" rel="noopener noreferrer">
-                        <img class="social-badge" src="assets/certs/122-1221050_instagram-white-logo-vector-png.png" alt="Instagram">
-                    </a>
-                </p>
-            </div>
-            <div class="footer-section">
-                <h3>Business Hours</h3>
-                <p>Monday-Friday: 8am - 8pm</p>
-                <p>Saturday: 9am - 5pm</p>
-                <p>Sunday: 9am - 5pm</p>
-            </div>
+    <section class="section">
+      <div class="container split-panel reveal">
+        <p class="section-kicker">Emergency &amp; Same-Day Service</p>
+        <h2>Need a Notary Today?</h2>
+        <p>For urgent loan signing or mobile notary requests, call or text for immediate availability. Evening and weekend appointments are available for time-sensitive signings.</p>
+        <div class="hero-actions" style="margin-top:1rem;">
+          <a class="btn btn-gold" href="tel:+17472736542">Call for Immediate Service</a>
+          <a class="btn btn-outline" href="sms:+17472736542">Text Your Request</a>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 LA-Signed.com. All rights reserved.</p>
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Testimonials</p>
+          <h2>Client Reviews</h2>
         </div>
-    </footer>
 
-    <!-- Contact form AJAX handler -->
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const form = document.getElementById('contact-form');
-        if (!form) return;
-        const status = document.getElementById('form-status');
+        <div class="testimonials-wrap reveal">
+          <div class="testimonials-track" data-slider-track>
+            <article class="testimonial">
+              <div class="card">
+                <p class="stars">★★★★★</p>
+                <h3>Reliable for Escrow Deadlines</h3>
+                <p>"Arin handled a same-day refinance signing perfectly. Professional, punctual, and excellent with borrowers."</p>
+                <div class="reviewer"><span class="initials">JT</span><div><strong>Jennifer T.</strong><p>Escrow Officer</p></div></div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <div class="card">
+                <p class="stars">★★★★★</p>
+                <h3>Excellent Mobile Service</h3>
+                <p>"Our client needed an evening appointment in Pasadena and LA Signed delivered flawless service."</p>
+                <div class="reviewer"><span class="initials">MB</span><div><strong>Michael B.</strong><p>Mortgage Broker</p></div></div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <div class="card">
+                <p class="stars">★★★★★</p>
+                <h3>Clear, Calm, and Professional</h3>
+                <p>"Very smooth notary process for trust documents. Communication was quick and the service felt premium."</p>
+                <div class="reviewer"><span class="initials">SR</span><div><strong>Sara R.</strong><p>Private Client</p></div></div>
+              </div>
+            </article>
+          </div>
+          <div class="slider-dots" aria-label="Testimonial navigation">
+            <button class="dot active" data-slide-dot aria-label="View testimonial 1"></button>
+            <button class="dot" data-slide-dot aria-label="View testimonial 2"></button>
+            <button class="dot" data-slide-dot aria-label="View testimonial 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            if (status) status.textContent = 'Sending...';
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Frequently Asked Questions</p>
+          <h2>Mobile Notary and Loan Signing FAQ</h2>
+        </div>
 
-            // Basic client-side honeypot check
-            const gotcha = form.querySelector('input[name="_gotcha"]').value;
-            if (gotcha) {
-                if (status) status.textContent = 'Spam detected.';
-                return;
-            }
+        <div class="faq-list reveal">
+          <article class="faq-item">
+            <button class="faq-btn" aria-expanded="false">What areas do you serve?<span>+</span></button>
+            <div class="faq-content" hidden>
+              <p>LA Signed serves Glendale, Burbank, Pasadena, Los Angeles, Beverly Hills, Sherman Oaks, Studio City, Van Nuys, Santa Monica, North Hollywood, and nearby Los Angeles County communities.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-btn" aria-expanded="false">Do you offer same-day appointments?<span>+</span></button>
+            <div class="faq-content" hidden>
+              <p>Yes. Same-day scheduling is available for many loan signing and notary requests. Call or text for current availability.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-btn" aria-expanded="false">What documents should I bring?<span>+</span></button>
+            <div class="faq-content" hidden>
+              <p>Please have your unsigned documents ready and a valid, government-issued photo ID that matches your signing name.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-btn" aria-expanded="false">Do you travel to hospitals?<span>+</span></button>
+            <div class="faq-content" hidden>
+              <p>Yes. Mobile visits are available for hospitals and care facilities when permitted by policy and law.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-btn" aria-expanded="false">Are you available weekends?<span>+</span></button>
+            <div class="faq-content" hidden>
+              <p>Yes. Weekend and evening appointments are available to support client schedules and closing timelines.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-btn" aria-expanded="false">What is a loan signing agent?<span>+</span></button>
+            <div class="faq-content" hidden>
+              <p>A loan signing agent is a certified notary trained to facilitate mortgage and real estate document signings accurately and efficiently.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            const data = new FormData(form);
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Contact LA Signed</p>
+          <h2>Book Your Appointment</h2>
+        </div>
 
-            try {
-                const res = await fetch(form.action, {
-                    method: form.method || 'POST',
-                    body: data,
-                    headers: { 'Accept': 'application/json' }
-                });
+        <div class="contact-wrap reveal">
+          <div>
+            <div class="contact-cards">
+              <article class="contact-card">
+                <h3>Call</h3>
+                <p><a href="tel:+17472736542">(747) 273-6542</a></p>
+              </article>
+              <article class="contact-card">
+                <h3>Text</h3>
+                <p><a href="sms:+17472736542">Send SMS Request</a></p>
+              </article>
+              <article class="contact-card">
+                <h3>Email</h3>
+                <p><a href="mailto:arinyedgarian.signing@gmail.com">arinyedgarian.signing@gmail.com</a></p>
+              </article>
+              <article class="contact-card">
+                <h3>Hours</h3>
+                <p>Available 7 Days a Week<br>8:00 AM - 9:00 PM</p>
+              </article>
+            </div>
 
-                if (res.ok) {
-                    if (status) status.textContent = 'Thanks — your message was sent!';
-                    form.reset();
-                } else {
-                    const err = await res.json().catch(() => null);
-                    if (status) status.textContent = (err && err.error) ? err.error : 'Submission failed. Please try again later.';
-                }
-            } catch (err) {
-                if (status) status.textContent = 'Network error. Please try again later.';
-            }
-        });
-    });
-    </script>
-    
+            <div class="map-frame" style="margin-top:0.9rem;">
+              <iframe src="https://www.google.com/maps?q=Los+Angeles+County,+California&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Service area map"></iframe>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form" action="https://formspree.io/f/mojnvqyw" method="POST">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+            <input type="hidden" name="_subject" value="New LA Signed booking request">
+            <div class="form-grid">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" required>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+              </div>
+              <div>
+                <label for="city">City</label>
+                <input id="city" name="city" type="text" required>
+              </div>
+              <div>
+                <label for="signing-type">Type of Signing</label>
+                <select id="signing-type" name="signing_type" required>
+                  <option value="">Select one</option>
+                  <option>Loan Signing</option>
+                  <option>Refinance Signing</option>
+                  <option>Buyer/Seller Package</option>
+                  <option>HELOC Signing</option>
+                  <option>Trust Documents</option>
+                  <option>Power of Attorney</option>
+                  <option>Hospital Notary</option>
+                  <option>Other Mobile Notary</option>
+                </select>
+              </div>
+              <div>
+                <label for="time">Preferred Appointment Time</label>
+                <input id="time" name="preferred_time" type="text" placeholder="Ex: Today 6:30 PM" required>
+              </div>
+            </div>
+            <div style="margin-top:0.8rem;">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" placeholder="Property type, address area, or special instructions"></textarea>
+            </div>
+            <div style="margin-top:0.95rem; display:flex; gap:0.6rem; flex-wrap:wrap;">
+              <button class="btn btn-primary" type="submit">Submit Booking Request</button>
+              <a class="btn btn-gold" href="tel:+17472736542">Call for Immediate Service</a>
+            </div>
+            <p id="form-status" style="margin-top:0.8rem; font-weight:600; color:var(--success);" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h4>LA Signed</h4>
+        <p>Premium Mobile Notary Public &amp; Certified Loan Signing Agent serving Los Angeles County, California.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="#services">Services</a></p>
+        <p><a href="#areas">Areas Served</a></p>
+        <p><a href="#contact">Contact</a></p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <p><a href="https://www.instagram.com/la.signed/" target="_blank" rel="noopener">Instagram</a></p>
+        <p><a href="https://notary.snapdocs.com/notary-public/california/glendale/arin-yedgarian" target="_blank" rel="noopener">Snapdocs</a></p>
+        <p><a href="mailto:arinyedgarian.signing@gmail.com">Email</a></p>
+      </div>
+      <div class="footer-bottom" style="grid-column: 1/-1;">
+        <p>&copy; 2026 LA Signed. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="float-actions" aria-hidden="true">
+    <a href="tel:+17472736542" title="Call">📞</a>
+    <a href="sms:+17472736542" title="Text">💬</a>
+  </div>
+
+  <div class="mobile-sticky">
+    <a class="call" href="tel:+17472736542">Call Now</a>
+    <a class="text" href="sms:+17472736542">Text Now</a>
+    <a class="book" href="#contact">Book</a>
+  </div>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
