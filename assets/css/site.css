@@ -80,6 +80,12 @@ h4 {
 
 h1 {
   font-size: clamp(2rem, 5vw, 3.9rem);
+  margin-bottom: 0.6rem;
+}
+
+/* increase gap between h1 and the following paragraph inside hero */
+.hero h1 {
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -204,7 +210,11 @@ button.btn {
 
 .hero {
   color: #f4f5f7;
-  padding: clamp(5rem, 8vw, 7rem) 0 4.3rem;
+  /* make hero cover the viewport and center its content */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0; /* remove large paddings so the image fills the first screen */
   background:
     linear-gradient(rgba(11, 20, 33, 0.75), rgba(11, 20, 33, 0.68)),
     url("../images/jason-dent-w3eFhqXjkZE-unsplash.jpg") center/cover;
@@ -215,6 +225,11 @@ button.btn {
   gap: 2rem;
   grid-template-columns: 1.35fr 0.9fr;
   align-items: center;
+}
+
+/* nudge hero content slightly upward so it sits higher on the first screen */
+.hero .container {
+  transform: translateY(-6vh);
 }
 
 .eyebrow {
