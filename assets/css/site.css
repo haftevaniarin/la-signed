@@ -63,7 +63,7 @@ a {
 .section-kicker {
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 0.74rem;
+  font-size: 1.175rem;
   font-weight: 700;
   color: var(--gold);
   margin-bottom: 0.7rem;
@@ -245,6 +245,10 @@ button.btn {
   color: #d6dae1;
   margin: 1rem 0 1.6rem;
   max-width: 52ch;
+}
+
+.hero .hero-tagline {
+  margin-top: 7rem;
 }
 
 .hero-actions {
@@ -529,6 +533,7 @@ button.btn {
   background: transparent;
   text-align: left;
   padding: 1rem 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #17293d;
   cursor: pointer;
